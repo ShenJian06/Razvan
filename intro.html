@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intro Cinematic – Un Tânăr Politicos</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100vh;
+      font-family: 'Arial Black', sans-serif;
+      background: white;
+    }
+
+    #parallax-intro {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .image-logo {
+      width: 300px;
+      opacity: 0;
+      transform: scale(0.8) rotate(-10deg);
+      animation: imageLogoAnim 2s ease-in-out forwards;
+    }
+
+    @keyframes imageLogoAnim {
+      0% {
+        opacity: 0;
+        transform: scale(0.8) rotate(-10deg);
+      }
+      30% {
+        opacity: 1;
+        transform: scale(1.05) rotate(0deg);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="parallax-intro">
+    <img src="assets/photos/logo.png" alt="Logo" class="image-logo" />
+  </div>
+
+  <script>
+    setTimeout(() => {
+      const intro = document.getElementById('parallax-intro');
+      intro.style.opacity = '0';
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 500);
+    }, 2000); // animație totală: 2s
+  </script>
+</body>
+</html>

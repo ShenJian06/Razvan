@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Player – Stil Netflix Avansat</title>
+  <link rel="stylesheet" href="media_style.css" />
+</head>
+<body>
+
+  <!-- Meniu ascuns sticky sus -->
+  <header class="sticky-header" id="stickyHeader">
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="#">Despre</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <!-- Player central suprapus -->
+  <div class="media-overlay" id="mediaOverlay">
+    <div class="media-background" id="mediaBackground"></div>
+    <!-- logo plasat aici -->
+    <img src="images/logo.png" alt="Logo" class="media-logo" />
+
+    <div class="media-display" id="mediaDisplay">
+      <!-- media va apărea aici -->
+       <!-- Logo cinematic central care dispare după prima interacțiune -->
+<img src="assets/photos/logo.png" alt="Cinematic Logo" class="initial-cinematic-logo" />
+
+    </div>
+  </div>
+
+  <!-- Carusel media -->
+  <div class="media-carousel" id="mediaCarousel">
+    <div class="carousel-item" data-type="image" data-src="images/1.jpg">
+      <img src="images/1.jpg" alt="Poza 1" />
+      <div class="item-info">
+        <h3>Răzvan Barta</h3>
+        <p>„Un tânăr cu gândire strategică și discurs clar, format într-un mediu academic exigent. Abordează problemele cu echilibru și respect pentru dialog. Valorile democratice, responsabilitatea socială și implicarea civică definesc modul său de a acționa în societate și de a contribui la schimbare.”
+
+          Vrei să adaugăm și o referință la un domeniu specific sau la o funcție publică?</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-type="image" data-src="images/1.jpg">
+      <img src="images/1.jpg" alt="Poza 1" />
+      <div class="item-info">
+        <h3>Poza 1</h3>
+        <p>Descriere scurtă despre media</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-type="image" data-src="images/1.jpg">
+      <img src="images/1.jpg" alt="Poza 1" />
+      <div class="item-info">
+        <h3>Poza 1</h3>
+        <p>Descriere scurtă despre media</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-type="image" data-src="images/1.jpg">
+      <img src="images/1.jpg" alt="Poza 1" />
+      <div class="item-info">
+        <h3>Poza 1</h3>
+        <p>Descriere scurtă despre media</p>
+      </div>
+    </div>
+    
+    <div class="carousel-item" data-type="image" data-src="images/2.jpg">
+      <img src="images/2.jpg" alt="Poza 2" />
+      <div class="item-info">
+        <h3>Poza 2</h3>
+        <p>Altă descriere scurtă</p>
+      </div>
+    </div>    
+
+    <div class="carousel-item" data-type="image" data-src="images/3.jpg">
+      <img src="images/3.jpg" alt="Poza 3" />
+      <div class="item-info">
+        <h3>Poza 3</h3>
+        <p>Descriere scurtă despre media</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-type="image" data-src="images/4.jpg">
+      <img src="images/4.jpg" alt="Poza 4" />
+      <div class="item-info">
+        <h3>Poza 4</h3>
+        <p>Descriere scurtă despre media</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-type="video" data-src="videos/video1.mp4">
+      <video src="videos/video1.mp4" muted autoplay loop></video>
+      <div class="item-info">
+        <h3>Clip video 1</h3>
+        <p>Fragment teaser video</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-type="youtube" data-src="https://www.youtube.com/embed/MsZ_Z9zoHgU">
+      <img src="https://img.youtube.com/vi/MsZ_Z9zoHgU/hqdefault.jpg" alt="YouTube Preview" />
+      <div class="item-info">
+        <h3>Întâlnire la nivel UE</h3>
+        <p>Clip ONU despre cooperare globală</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="media_script.js"></script>
+</body>
+</html>
